@@ -34,6 +34,14 @@ class BsFormsServiceProvider extends ServiceProvider
             ]
         );
         FormFacade::component(
+            'bsPassword',
+            'bs-forms::password',
+            [
+                'name',
+                'attributes' => [],
+            ]
+        );
+        FormFacade::component(
             'bsEmail',
             'bs-forms::email',
             [
