@@ -1,7 +1,7 @@
 {
   "name": "figured/bs-forms",
   "type": "library",
-  "description": "Bootstrap 4 fields for Laravel 5.2",
+  "description": "Bootstrap V4 style form field macros for LaravelCollective/html",
   "license": "MIT",
   "authors": [
     {
@@ -9,7 +9,7 @@
     }
   ],
   "require": {
-    "php": ">=5.3.3",
+    "php": ">=5.5.9",
     "laravelcollective/html": "5.2.*",
     "illuminate/support": "5.2.*"
   },

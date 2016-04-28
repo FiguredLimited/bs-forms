@@ -4,7 +4,7 @@
             $name,
             [
                 'class' => 'form-control',
-                'placeholder' => $attributes['placeholder'] ?? ''
+                'placeholder' => (isset($attributes['placeholder'])) ? $attributes['placeholder'] : ''
             ]
         )
     !!}

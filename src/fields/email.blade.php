@@ -2,10 +2,10 @@
     <label>{{ $attributes['label'] or ucwords(str_replace('_', ' ', $name)) }}</label>
     {!! \Collective\Html\FormFacade::email(
             $name,
-            $attributes['value'] ?? null,
+            (isset($attributes['value'])) ? $attributes['value'] : null,
             [
                 'class' => 'form-control',
-                'placeholder' => $attributes['placeholder'] ?? ''
+                'placeholder' => (isset($attributes['placeholder'])) ? $attributes['placeholder'] : ''
             ]
         )
     !!}
