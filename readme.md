@@ -1,4 +1,5 @@
-# Form Macros for Bootstrap 4
+# BsForms
+Custom macros for [LaravelCollective/html](https://github.com/LaravelCollective/html) forms to format fields for bootstrap v4
 
 ## Installation
 
@@ -32,5 +33,18 @@ Use the new field macros within a Form
 {!! Form::open(array('url' => 'foo/bar')) !!}
 	{!! Form::bsText('name') !!}
 	{!! Form::bsEmail('email') !!}
+	{!! Form::bsPassword('password') !!}
 {!! Form::close() !!}
+```
+
+### Attributes
+
+Add attributes to fields with the second paramter:
+
+```php
+{!! Form::bsText('name', [
+    'placeholder' => "Name",
+    'label'       => "Your Name"
+    'help'        => "Enter your name"
+]) !!}
 ```
