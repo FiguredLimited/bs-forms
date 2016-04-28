@@ -1,0 +1,21 @@
+{
+  "name": "figuredlimited/bs-forms",
+  "type": "library",
+  "description": "Bootstrap 4 fields for Laravel 5.2",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Figured Limited"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.3",
+    "laravelcollective/html": "5.2.*",
+    "illuminate/support": "5.2.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Figured\\BsForms\\": "src/"
+    }
+  }
+}
