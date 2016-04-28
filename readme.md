@@ -1,5 +1,5 @@
 # BsForms
-Custom macros for [LaravelCollective/html](https://github.com/LaravelCollective/html) forms to format fields for bootstrap v4
+Custom macros for [LaravelCollective/html](https://github.com/LaravelCollective/html) forms to format fields for [Bootstrap V4](http://v4-alpha.getbootstrap.com)
 
 ## Installation
 
