@@ -1,6 +1,6 @@
 <fieldset class="form-group{{ $errors->has($name) ? ' has-danger' : '' }}">
     <label>{{ $attributes['label'] or ucwords(str_replace('_', ' ', $name)) }}</label>
-    {!! Form::email(
+    {!! \Collective\Html\FormFacade::email(
             $name,
             $attributes['value'] ?? null,
             [
