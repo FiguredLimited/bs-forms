@@ -2,10 +2,11 @@
     <label>{{ $attributes['label'] or ucwords(str_replace('_', ' ', $name)) }}</label>
     {!! \Collective\Html\FormFacade::password(
             $name,
-            [
-                'class' => 'form-control',
-                'placeholder' => (isset($attributes['placeholder'])) ? $attributes['placeholder'] : ''
-            ]
+            array_merge([
+                'class' => (isset($attributes['class'])) ? $attributes['class'].' form-control' : 'form-control',
+            ],
+            // Removes the 'value', 'class' and 'label' keys from the merge
+            array_diff_key($attributes, ['value' => null, 'class' => null, 'label' => null]))
         )
     !!}
     @if ($errors->has($name))
